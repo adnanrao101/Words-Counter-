@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+
+<div class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 p-6">
+
+  <!-- Textarea Box -->
+  <textarea
+    id="input"
+    rows="15"
+    cols="80"
+    placeholder="Start typing your paragraph..."
+    class="w-full max-w-3xl p-5 text-lg rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md text-white placeholder-white/60 outline-none 
+           focus:ring-4 focus:ring-pink-400 focus:bg-white/20 shadow-xl transition duration-300 resize-none"
+  ></textarea>
+
+  <!-- Character Counters -->
+  <div class="flex flex-col sm:flex-row items-center justify-between gap-4 w-full max-w-3xl mt-6">
+
+    <h2 id="words"
+      class="w-full sm:w-1/2 text-center text-xl font-semibold text-white bg-white/10 border border-white/20 py-3 rounded-xl shadow-md 
+             hover:bg-white/20 transition-all duration-300">
+      WORDS: <span class="text-yellow-300 font-bold">0</span>
+    </h2>
+
+    <h2 id="Sentences"
+      class="w-full sm:w-1/2 text-center text-xl font-semibold text-white bg-white/10 border border-white/20 py-3 rounded-xl shadow-md 
+             hover:bg-white/20 transition-all duration-300">
+      Sentences: <span class="text-yellow-300 font-bold">0</span>
+    </h2>
+
+    <h2 id="CCWS"
+      class="w-full sm:w-1/2 text-center text-xl font-semibold text-white bg-white/10 border border-white/20 py-3 rounded-xl shadow-md 
+             hover:bg-white/20 transition-all duration-300">
+      With Spaces: <span class="text-yellow-300 font-bold">0</span>
+    </h2>
+
+    <h2 id="CCWithoutSpaces"
+      class="w-full sm:w-1/2 text-center text-xl font-semibold text-white bg-white/10 border border-white/20 py-3 rounded-xl shadow-md 
+             hover:bg-white/20 transition-all duration-300">
+      Without Spaces: <span class="text-green-300 font-bold">0</span>
+    </h2>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+   <!-- <textarea name="" id="input" rows="15" cols="80"></textarea>
+
+   <h2 id="CCWS"></h2>
+   <h2 id="CCWithoutSpaces"></h2> -->
+
+    <script src="app.js"></script>
+</body>
+</html>
